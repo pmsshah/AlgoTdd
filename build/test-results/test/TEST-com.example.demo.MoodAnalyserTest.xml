@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.demo.MoodAnalyserTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-07-30T17:20:21" hostname="PMSHAH-LENOVA" time="0.041">
+<testsuite name="com.example.demo.MoodAnalyserTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-07-30T19:58:24" hostname="PMSHAH-LENOVA" time="0.055">
   <properties/>
-  <testcase name="[1] Happy" classname="com.example.demo.MoodAnalyserTest" time="0.027"/>
+  <testcase name="[1] 10, 10, 20" classname="com.example.demo.MoodAnalyserTest" time="0.026"/>
+  <testcase name="[2] 20, 20, 40" classname="com.example.demo.MoodAnalyserTest" time="0.001"/>
+  <testcase name="[3] 30, 30, 60" classname="com.example.demo.MoodAnalyserTest" time="0.001"/>
+  <testcase name="[1] Happy" classname="com.example.demo.MoodAnalyserTest" time="0.003"/>
   <testcase name="[2] Happy?" classname="com.example.demo.MoodAnalyserTest" time="0.001"/>
-  <testcase name="[3] really we are" classname="com.example.demo.MoodAnalyserTest" time="0.0"/>
+  <testcase name="[3] really we are" classname="com.example.demo.MoodAnalyserTest" time="0.001"/>
   <testcase name="testMoodAnalysis()" classname="com.example.demo.MoodAnalyserTest" time="0.001"/>
   <testcase name="[1] Really sad" classname="com.example.demo.MoodAnalyserTest" time="0.001"/>
-  <testcase name="[2] sad?" classname="com.example.demo.MoodAnalyserTest" time="0.0"/>
-  <testcase name="[3] sad message is.." classname="com.example.demo.MoodAnalyserTest" time="0.001"/>
+  <testcase name="[2] sad?" classname="com.example.demo.MoodAnalyserTest" time="0.001"/>
+  <testcase name="[3] sad message is.." classname="com.example.demo.MoodAnalyserTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
