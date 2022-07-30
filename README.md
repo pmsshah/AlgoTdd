@@ -5,7 +5,7 @@ Problem: Brackets should be balanced.
 gradlew.bat clean
 gradlew.bat test 
 Open file: C:\Code\codding\AlgoTdd\build\reports\tests\test\index.html
-gradlew test --tests "com.example.demo.ArrayAlgoTest.*"
+gradlew test --tests "com.example.array.ArrayAlgoTest.*"
 
 ***** Use case1: Say hello world, rest call. ******
 * Location: java\egTest
