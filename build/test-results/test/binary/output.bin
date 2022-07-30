@@ -1,3 +1,0 @@
- Input: {}{}({()}) Result: true
-)Input: {abc}{abc}({(123)}) Result: true
- Input: {}{}({()}) Result: true

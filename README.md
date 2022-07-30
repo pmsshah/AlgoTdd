@@ -1,4 +1,14 @@
 # java
+**** 07/30/2022 Link List addtion *****
+Branch: LINK_ALGO
+Problem: Add two link list. Link list 243 value 342. Link List 564 valie 465. Total 807, present link list: 708.
+	Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9] Output: [8,9,9,9,0,0,0,1]
+	Input: l1 = [0], l2 = [0], Output: [0]
+gradlew.bat clean
+gradlew.bat test 
+Open file: C:\Code\codding\AlgoTdd\build\reports\tests\test\index.html
+gradlew test --tests "com.example.link.ListNodeAdditionTest.*"
+
 **** 07/30/2022 Array balance bracket example *****
 Branch: ARRAY_ALOG
 Problem: Brackets should be balanced.
