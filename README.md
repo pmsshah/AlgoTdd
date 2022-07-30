@@ -1,4 +1,11 @@
 # java
+**** 07/30/2022 Array balance bracket example *****
+Branch: ARRAY_ALOG
+Problem: Brackets should be balanced.
+gradlew.bat clean
+gradlew.bat test 
+Open file: C:\Code\codding\AlgoTdd\build\reports\tests\test\index.html
+gradlew test --tests "com.example.demo.ArrayAlgoTest.*"
 
 ***** Use case1: Say hello world, rest call. ******
 * Location: java\egTest
