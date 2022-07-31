@@ -1,4 +1,13 @@
 # java
+**** 07/30/2022 HEAP min traversal *****
+Branch: HEAP_ALGO
+Problem: Min heap alogorithem by https://codegym.cc/groups/posts/min-heap-in-java
+	implementations is by array: 3,13,7,16,21,12,9	
+gradlew.bat clean
+gradlew.bat test 
+Open file: C:\Code\codding\AlgoTdd\build\reports\tests\test\index.html
+gradlew test --tests "com.example.link.ListNodeAdditionTest.*"
+
 **** 07/30/2022 Link List addtion *****
 Branch: LINK_ALGO
 Problem: Add two link list. Link list 243 value 342. Link List 564 valie 465. Total 807, present link list: 708.
