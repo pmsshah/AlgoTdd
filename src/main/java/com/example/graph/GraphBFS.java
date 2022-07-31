@@ -71,4 +71,51 @@ public class GraphBFS {
         }
         System.out.println(sb.toString());
     }
+
+    void DFSUtil(int v, boolean visited[], StringBuffer sb)
+    {
+        // Mark the current node as visited and print it
+        if(!visited[v]) {
+            visited[v] = true;
+            sb.append(v).append(" ");
+
+            // Recur for all the vertices adjacent to this
+            // vertex
+            Iterator<Integer> i = adj[v].listIterator();
+            while (i.hasNext()) {
+                int n = i.next();
+                if (!visited[n])
+                    DFSUtil(n, visited, sb);
+            }
+        }
+    }
+    void DFS(int v)
+    {
+        // Mark all the vertices as
+        // not visited(set as
+        // false by default in java)
+        boolean visited[] = new boolean[V];
+
+        // Call the recursive helper
+        // function to print DFS
+        // traversal
+        StringBuffer sb = new StringBuffer();
+        sb.append("FFS from: ").append(v).append(" : ");
+        DFSUtil(v, visited, sb);
+        System.out.println(sb.toString());
+    }
+    void DFSAllGraph()
+    {
+        boolean visited[] = new boolean[V];
+        StringBuffer sb = new StringBuffer();
+        sb.append("DFS All Graph : ");
+        for(int i=0; i<V; i++) {
+            Iterator<Integer> it = adj[i].listIterator();
+            while (it.hasNext()) {
+                int n = it.next();
+                DFSUtil(n, visited, sb);
+            }
+        }
+        System.out.println(sb.toString());
+    }
 }

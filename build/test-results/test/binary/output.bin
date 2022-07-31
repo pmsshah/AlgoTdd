@@ -1,1 +1,4 @@
-BFS All Graph : 1 2 0 3 
+FFS from: 2 : 2 0 1 3 
+FFS from: 0 : 0 1 2 3 
+FFS from: 1 : 1 2 0 3 
+FFS from: 3 : 3 

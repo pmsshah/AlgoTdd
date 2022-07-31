@@ -18,7 +18,7 @@ class GraphBFSTest {
     }
 
     @Test
-    void BFS() {
+    void BFSTest() {
         GraphBFS g = new GraphBFS(4); //adj = new LinkedList[v];
         g.addEdge(0, 1);        //adj[0] --> 1
         g.addEdge(0, 2);    //adj[0] --> 1, 2
@@ -42,5 +42,31 @@ class GraphBFSTest {
         g.addEdge(2, 3);    //adj[2] --> 0, 3
         g.addEdge(3, 3);    //adj[3] --> 3
         g.BFSAllGraph();
+    }
+
+    @Test
+    void DFSTest() {
+        GraphBFS g = new GraphBFS(4); //adj = new LinkedList[v];
+        g.addEdge(0, 1);        //adj[0] --> 1
+        g.addEdge(0, 2);    //adj[0] --> 1, 2
+        g.addEdge(1, 2);    //adj[1] --> 2
+        g.addEdge(2, 0);        //adj[2] --> 0
+        g.addEdge(2, 3);    //adj[2] --> 0, 3
+        g.addEdge(3, 3);    //adj[3] --> 3
+        g.DFS(2);   //2031  add(2). pop(2)->(add 03TT). pop(0)->(add 312TTF). pop(3)->(add 3123TTFF)
+        g.DFS(0);   //0123
+        g.DFS(1);   //1203
+        g.DFS(3);   //3
+    }
+    @Test
+    void DFSAllGraphTest() {
+        GraphBFS g = new GraphBFS(4); //adj = new LinkedList[v];
+        g.addEdge(0, 1);        //adj[0] --> 1
+        g.addEdge(0, 2);    //adj[0] --> 1, 2
+        g.addEdge(1, 2);    //adj[1] --> 2
+        g.addEdge(2, 0);        //adj[2] --> 0
+        g.addEdge(2, 3);    //adj[2] --> 0, 3
+        g.addEdge(3, 3);    //adj[3] --> 3
+        g.DFSAllGraph();   //2031  add(2). pop(2)->(add 03TT). pop(0)->(add 312TTF). pop(3)->(add 3123TTFF)
     }
 }
