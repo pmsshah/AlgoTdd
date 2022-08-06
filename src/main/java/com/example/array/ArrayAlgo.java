@@ -60,4 +60,48 @@ public class ArrayAlgo {
         }
         return area;
     }
+
+    public List<String> TeliCombinations(String digits) {
+        List<String> allCombi = new ArrayList<String>();
+        HashMap<Character, String> telDigit = new HashMap<Character, String>();
+        telDigit.put('2', "abc");
+        telDigit.put('3', "def");
+        telDigit.put('4', "ghi");
+        telDigit.put('5', "jkl");
+        telDigit.put('6', "mno");
+        telDigit.put('7', "pqrs");
+        telDigit.put('8', "tuv");
+        telDigit.put('9', "wxyz");
+        for(int i=0; i<digits.length(); i++) {
+            String str = telDigit.get(digits.charAt(i));
+            if(str != null) {
+                allCombi = combination(allCombi, str);
+            }
+        }
+        return allCombi;
+    }
+
+    public List<String> combination(List<String> strArr, String str) {
+        List<String> newCombi = new ArrayList<String>();
+        StringBuilder stringBuilder = new StringBuilder();
+        if(strArr.isEmpty()) {
+            for (int i = 0; i < str.length(); i++) {
+                stringBuilder.append(str.charAt(i));
+                newCombi.add(stringBuilder.toString());
+                stringBuilder.setLength(0);
+            }
+            return newCombi;
+        } else {
+            for (int i = 0; i < strArr.size(); i++) {
+                String prvStr = strArr.get(i);
+                for (int j = 0; j < str.length(); j++) {
+                    stringBuilder.append(prvStr).append(str.charAt(j));
+                    newCombi.add(stringBuilder.toString());
+                    stringBuilder.setLength(0);
+                }
+            }
+        }
+        return newCombi;
+    }
+
 }
