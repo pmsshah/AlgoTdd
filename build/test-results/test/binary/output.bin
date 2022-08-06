@@ -1,4 +1,0 @@
-@Input: 23 Result: [ad, ae, af, bd, be, bf, cd, ce, cf] Size: 9
-$Input: 2 Result: [a, b, c] Size: 3
-ÒInput: 239 Result: [adw, adx, ady, adz, aew, aex, aey, aez, afw, afx, afy, afz, bdw, bdx, bdy, bdz, bew, bex, bey, bez, bfw, bfx, bfy, bfz, cdw, cdx, cdy, cdz, cew, cex, cey, cez, cfw, cfx, cfy, cfz] Size: 36
-Input:  Result: [] Size: 0
