@@ -103,4 +103,32 @@ class ArrayAlgoTest {
                 arguments(arr3, 85710)
         );
     }
+<<<<<<< HEAD
+=======
+
+    @ParameterizedTest
+    @ValueSource(strings = { "23", "", "239" })
+    void TeliCombinations(String input) {
+        List<String> allCombi = arrayAlgo.TeliCombinations(input);
+        System.out.println("Input: " + input + " Result: "+allCombi + " Size: " + allCombi.size());
+        Assertions.assertEquals(true, true);
+    }
+
+    @ParameterizedTest
+    @MethodSource
+    void TeliCombinationsAll(String input, int expected) {
+        List<String> allCombi = arrayAlgo.TeliCombinations(input);
+        System.out.println("Input: " + input + " Result: "+allCombi + " Size: " + allCombi.size());
+        Assertions.assertEquals(expected, allCombi.size());
+    }
+    private static Stream<Arguments> TeliCombinationsAll() {
+        return Stream.of(
+                arguments("23", 9),
+                arguments("2", 3),
+                arguments("239", 36),
+                arguments("", 0)
+        );
+    }
+
+>>>>>>> ARRAY_ALOG
 }
