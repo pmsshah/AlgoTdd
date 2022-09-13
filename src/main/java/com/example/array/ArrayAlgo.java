@@ -60,9 +60,6 @@ public class ArrayAlgo {
         }
         return area;
     }
-<<<<<<< HEAD
-=======
-
     public List<String> TeliCombinations(String digits) {
         List<String> allCombi = new ArrayList<String>();
         HashMap<Character, String> telDigit = new HashMap<Character, String>();
@@ -105,6 +102,4 @@ public class ArrayAlgo {
         }
         return newCombi;
     }
-
->>>>>>> ARRAY_ALOG
 }

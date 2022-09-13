@@ -103,8 +103,6 @@ class ArrayAlgoTest {
                 arguments(arr3, 85710)
         );
     }
-<<<<<<< HEAD
-=======
 
     @ParameterizedTest
     @ValueSource(strings = { "23", "", "239" })
@@ -129,6 +127,4 @@ class ArrayAlgoTest {
                 arguments("", 0)
         );
     }
-
->>>>>>> ARRAY_ALOG
 }
